@@ -1,0 +1,42 @@
+{
+    "manifest_version": 2,
+    "name": "Phishing Detector",
+    "version": "v0.1-dev",
+    "description": "Detects potential phishing sites, emails and suspicious attachments",
+    "icons": {
+      "48": "icons/favicon.png"
+    },
+    "permissions": [
+      "tabs",
+      "<all_urls>",
+      "https://*.ngrok.io/*",
+      "storage",
+      "unlimitedStorage"
+    ],
+    "browser_action": {
+      "default_icon": "icons/favicon.png",
+      "default_title": "Phishing Detector",
+      "default_popup": "popup/index.html"
+    },
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "*://*/*"
+        ],
+        "js": [
+          "content.js"
+        ]
+      }
+    ],
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "phish@det.com",
+        "strict_min_version": "42.0"
+      }
+    }
+  }
