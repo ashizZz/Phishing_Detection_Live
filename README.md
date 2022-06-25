@@ -1,2 +1,2 @@
-# Phishing_Detector_LiveAddon
-Phishing_Detector_LiveAddon is Firefox Addon that detects phising websites live
+# Phishing_Detection_LiveAddon
+Phishing_Detection_LiveAddon is Firefox Addon which  an automatically detects phising websites and Emails live.
