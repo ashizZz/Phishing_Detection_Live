@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="popup-content">
+        <div class="header">
+        </div>
+        <div class="modal-header">
+            <h1 class="logo">
+                <img class="logo-icon" src="../icons/project_logo.png" alt="Logo" />THE PHISHING DETECTOR
+
+            </h1>
+        </div>
+
+        <div class="modal-content-center">
+            <p><i id="hosturl"></i></p>
+
+            <button id="report_Url" type="submit">Report this URL</button>
+            <button id="block_all" type="submit">Block this site!</button>
+
+        </div>
+        <div class="modal-content">
+            <p id="display_result">
+                <font color="green" id="check_in_progress">Check in progress..Do not close the extension window.
+            </p>
+            </font>
+            </p>
+        </div>
+
+
+        <div class="modal-content">
+            <p id="display_email_result" hidden>
+                <font color="brown" id="email_result">dsd</font>
+            </p>
+        </div>
+
+
+
+        <script src="popup.js"></script>
+</body>
+
+</html>
